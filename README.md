@@ -14,6 +14,18 @@ A hierarchical approval workflow system with department-based routing.
 - JWT Authentication
 - Dockerized environment
 
+## Assumptions
+
+### Business Rules
+
+- Users can only approve requests from their department
+
+- Rejection immediately terminates workflow
+
+- Approval moves request to next level
+
+-  Each department level can have only **one assigned user**
+
 ## ⚙️ System Requirements
 
 - Docker 20.10+
@@ -22,7 +34,7 @@ A hierarchical approval workflow system with department-based routing.
 
 1. Clone and configure:
    ```bash
-   git clone https://github.com/yourrepo/approval-workflow.git
+   git clone https://github.com/ayowandeapp/approval_workflow_system.git
    cd approval-workflow
    cp .env.example .env
 
